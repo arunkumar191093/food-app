@@ -1,0 +1,119 @@
+.home-container {
+  .header {
+    background-color: green;
+    text-align: center;
+    color: #fff;
+    padding: 12px;
+  }
+
+  .heading-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .heading-info {
+      .heading {
+        font-weight: bold;
+        padding: 10px;
+      }
+      .sub-heading {
+        padding: 0 10px;
+        font-size: 14px;
+        color: grey;
+      }
+    }
+  }
+
+  .favourite-container {
+    display: flex;
+    overflow: auto;
+    .favourite-option {
+      padding: 12px;
+    }
+  }
+
+  .search {
+    padding: 8px 4px;
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #b5b5b5;
+      padding: 4px;
+    }
+  }
+
+  .categories-container {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    .categories-filter {
+      display: flex;
+      overflow: auto;
+      padding-bottom: 12px;
+      .option {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 6px 12px;
+        border: 1px solid #cacaca;
+        margin: 0 4px;
+        border-radius: 2px;
+        &.selected {
+          border-bottom: 2px solid #37b937;
+        }
+      }
+    }
+  }
+
+  .search-results {
+    margin-top: 12px;
+    .search-option {
+      border: 1px solid #c1c1c1;
+      border-radius: 4px;
+      -webkit-box-shadow: 10px 10px 6px -6px rgba(181, 181, 181, 0.65);
+      -moz-box-shadow: 10px 10px 6px -6px rgba(181, 181, 181, 0.65);
+      box-shadow: 10px 10px 6px -6px rgba(181, 181, 181, 0.65);
+      margin-top: 12px;
+      padding-bottom: 12px;
+      float: left;
+      
+      .card-container .container {
+        .content {
+          padding-left: 12px;
+        }
+        .action {
+          padding-right: 12px;
+        }
+      }
+    }
+    .no-item-msg {
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .search-option {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .search-option {
+    width: 33%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search-option {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .search-option {
+    width: 100%;
+  }
+}
