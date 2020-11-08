@@ -1,22 +1,19 @@
 <template>
-  <home />
+  <div class="app-container">
+    <router-view />
+  </div>
 </template>
 
-<script>
-import Home from './components/home'
-
-export default {
-  name: 'App',
-  components: {
-    Home
-  }
+<style lang="scss">
+body {
+  margin: 0;
 }
-</script>
-
-<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.app-container {
+  height: 100%;
 }
 </style>

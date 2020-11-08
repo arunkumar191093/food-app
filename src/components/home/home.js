@@ -1,9 +1,11 @@
 import Card from '../card';
+import ProductDetails from '../product-details';
 
 export default {
   name: 'home',
   components: {
-    Card
+    Card,
+    ProductDetails
   },
   data() {
     return {

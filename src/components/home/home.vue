@@ -52,6 +52,10 @@
       </div>
       <div class="no-item-msg" v-else>No Dishes Found</div>
     </div>
+
+    <div v-if="$route.path == '/details'">
+      <product-details />
+    </div>
   </div>
 </template>
 
